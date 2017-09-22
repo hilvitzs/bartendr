@@ -2,7 +2,6 @@ package api
 
 import (
 	"encoding/json"
-	"fmt"
 	"net/http"
 	"sync"
 
@@ -159,7 +158,8 @@ func handleTopRecipes(w http.ResponseWriter, r *http.Request) {
 	c := appengine.NewContext(r)
 	recipes, err := topRecipes(c)
 	if err != nil {
-		http.Error(w, fmt.Sprintf("Failed getting recipes: %v", err), http.StatusInternalServerError)
+		respondErr(c, w, r, err, http.StatusInternalServerError)
+		return
 	}
 	respondJSON(c, w, r, recipes, http.StatusOK)
 }
