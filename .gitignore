@@ -1,0 +1,5 @@
+# Dependency directory
+app/node_modules
+
+# dist folder
+app/dist

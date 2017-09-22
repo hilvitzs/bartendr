@@ -1,0 +1,26 @@
+runtime: go
+api_version: go1
+
+skip_files:
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?\..*$
+- node_modules
+
+handlers:
+- url: /api/(.*)
+  script: _go_app
+
+- url: /bundle.js
+  static_files: dist/bundle.js
+  upload: dist/bundle.js
+  login: required
+
+- url: /(.*)
+  script: _go_app
+  login: required
+  
+
+
