@@ -20,7 +20,7 @@ const RecipeForm = ({ fieldChanged, onSave, recipe }) => (
         get this done
       </li>
       <li>
-        Feel free to change the form's parent component `RecipeFormPage`.
+        Feel free to change the form's parent component <code>RecipeFormPage</code>
       </li>
     </ul>
   </div>
