@@ -59,7 +59,8 @@ We are looking for correctness (does it work?) as well as your approach to the p
 Three things:
  - Deploy your app - Create a new project in the [Google Cloud Platform Console](https://console.cloud.google.com/), then run:
     - `gcloud init` and follow the prompts
-    - `npm run deploy` and follow the propmts
+    - `gcloud app create` and follow the prompts
+    - `npm run deploy` and follow the prompts
  - Add a `README.md` (just replace this one) in the project folder with a link to the live app and an explanation of your new feature
  - Email us your project in a `.zip` file. Be sure not to include `node_modules`
 
