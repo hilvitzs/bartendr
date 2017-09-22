@@ -20,10 +20,7 @@ const RecipeForm = ({ fieldChanged, onSave, recipe }) => (
         get this done
       </li>
       <li>
-        The form page container that this component is wrapped in
-        is already wired up to use the appropriate redux actions.
-        All you have to do is call the <code>onSave</code> and <code>fieldChanged</code>
-        callbacks from the RecipeForm component
+        Feel free to change the form's parent component `RecipeFormPage`.
       </li>
     </ul>
   </div>
